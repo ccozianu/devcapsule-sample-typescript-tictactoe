@@ -1,0 +1,33 @@
+devcapsule-schema-version = 1
+workflow-type = "multiple-streams"
+
+[capabilities]
+need = [
+    "frontend-ide",
+    "node",
+    "claude-code-agent",
+    "codex-agent",
+    "antigravity-agent",
+]
+
+[project]
+name = "TypeScript Tictactoe 5-in-row"
+slug = "tictactoe-5inrow"
+creator = "mailto:ccozianu@gmail.com"
+mount = "/workspace/tictactoe-5inrow"
+
+[host.docker.mode.recommended]
+value = "host-socket"
+justification = "It's good to play with host docker"
+
+[host.network.mode.recommended]
+value = "host"
+justification = "\"Temp hack\""
+
+[host.browser.host-open.recommended]
+value = true
+justification = "Browse"
+
+[host.privilege.development-sudo.recommended]
+value = true
+justification = "for debugging"
