@@ -22,6 +22,14 @@ For a production build:
 npm run build
 ```
 
+To run the automated tests:
+
+```bash
+npm test
+# or in watch mode
+npm run test:watch
+```
+
 To exercise the VSCodium and Claude Code configuration from the repository root:
 
 ```bash
